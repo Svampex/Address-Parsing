@@ -63,8 +63,7 @@ public class View extends JFrame {
         public void paint(Graphics g) {
             g.setColor(MyColor.appBackground);
             g.fillRect(0,0, getWidth(), getHeight());
-            list.drawListBox(g);
-            list.drawListElements(g);
+            list.drawList(g);
             textfield.drawTextField(g);
         }
     }

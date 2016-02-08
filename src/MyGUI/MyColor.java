@@ -10,5 +10,5 @@ public class MyColor {
     public static Color addressList = new Color(230, 230, 230);
     public static Color evenListElement = Color.gray;
     public static Color unevenListElement = Color.lightGray;
-    public static Color selectedElement = Color.WHITE;
+    //public static Color selectedElement = Color.WHITE;
 }

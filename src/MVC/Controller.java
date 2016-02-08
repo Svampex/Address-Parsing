@@ -19,7 +19,7 @@ public class Controller implements KeyListener, MouseWheelListener, MouseInputLi
     }
 
     private Controller(){
-        view.setAddresses(Model.getInstance().getAddresses());
+        //view.setAddresses(Model.getInstance().getAddresses());
     }
 
     private void textFieldInput(KeyEvent e){

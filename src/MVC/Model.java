@@ -32,14 +32,4 @@ public class Model {
         return addresses;
     }
 
-    /*public ArrayList<ListElement> getAddressesAsListElements(){
-        ArrayList<ListElement> addressesAsElements = new ArrayList<>();
-        for (Address ad: addresses) {
-            String adStreetNrSide = ad.street() + " " + ad.house() + " " + ad.floor() + " " + ad.side();
-            String adPostCity = ad.postcode() + " " + ad.city();
-            addressesAsElements.add(new ListElement(adStreetNrSide, adPostCity));
-        }
-        return addressesAsElements;
-    }*/
-
 }

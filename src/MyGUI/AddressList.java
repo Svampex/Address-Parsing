@@ -47,12 +47,17 @@ public class AddressList extends JComponent{
         addressListElements.add(new AddressListElement(ad));
     }
 
-    public void drawListBox(Graphics g){
+    public void drawList(Graphics g){
+        drawListBox(g);
+        drawListElements(g);
+    }
+
+    private void drawListBox(Graphics g){
         g.setColor(MyColor.addressList);
         g.fillRect(listRect.getRectX(), listRect.getRectY(), listRect.getRectWidth(), listRect.getRectHeight());
     }
 
-    public void drawListElements(Graphics g){
+    private void drawListElements(Graphics g){
         for (AddressListElement element: addressListElements) {
             int YPos = listRect.getRectY() + addressListElements.indexOf(element)*elementHeight - indexHeight;
             element.setElementRect(listRect.getRectX(), YPos, listRect.getRectWidth());
