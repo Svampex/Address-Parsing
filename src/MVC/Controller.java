@@ -1,6 +1,7 @@
 package MVC;
 
 
+import javax.swing.*;
 import javax.swing.event.MouseInputListener;
 import java.awt.*;
 import java.awt.event.*;
@@ -19,7 +20,7 @@ public class Controller implements KeyListener, MouseWheelListener, MouseInputLi
     }
 
     private Controller(){
-        //view.setAddresses(Model.getInstance().getAddresses());
+        
     }
 
     private void textFieldInput(KeyEvent e){
@@ -28,6 +29,8 @@ public class Controller implements KeyListener, MouseWheelListener, MouseInputLi
             String newAddress = view.getText();
             if(Address.parse(newAddress) != null){
                 view.addNewAddress(model.addNewAddress(newAddress));
+            }else{
+                JOptionPane.showMessageDialog(view, "Plase try another address!", "Wrong input!", JOptionPane.ERROR_MESSAGE);
             }
         }
     }

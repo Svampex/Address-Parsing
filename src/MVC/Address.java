@@ -45,6 +45,6 @@ public class Address {
         if(m2.matches()){
             return b.street(m2.group("vejnavn")).house(m2.group("husnr")).floor(m2.group("etage")).side(m2.group("side")).postcode(m2.group("postnr")).city(m2.group("bynavn")).build();
         }
-        return b.build();
+        return null;
     }
 }

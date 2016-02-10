@@ -12,7 +12,7 @@ public class AddressListElement {
 
     public AddressListElement(Address address){
         if(address.floor() != null && address.side() != null){
-            street = address.street() + " " + address.house() + " " + address.floor() + " " + address.side().toUpperCase();
+            street = address.street() + " " + address.house() + " " + address.floor() + " " + address.side();
         }else{
             street = address.street() + " " + address.house();
         }

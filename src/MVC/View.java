@@ -47,7 +47,7 @@ public class View extends JFrame {
     }
 
     public String getText(){
-        return textfield.getTextAndClear();
+       return textfield.getTextAndClear();
     }
 
     public void setAddresses(ArrayList<Address> newAddresses){
